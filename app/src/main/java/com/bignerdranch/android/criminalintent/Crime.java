@@ -3,9 +3,6 @@ package com.bignerdranch.android.criminalintent;
 import java.util.Date;
 import java.util.UUID;
 
-/**
- * Created by Paul Barker on 3/5/2016.
- */
 public class Crime {
 
     private UUID mId;
@@ -14,10 +11,8 @@ public class Crime {
     private boolean mSolved;
 
     public Crime() {
-        // Generate unique ID
         mId = UUID.randomUUID();
         mDate = new Date();
-
     }
 
     public UUID getId() {
@@ -31,7 +26,6 @@ public class Crime {
     public void setTitle(String title) {
         mTitle = title;
     }
-
 
     public Date getDate() {
         return mDate;
